@@ -8,7 +8,7 @@
       <param name="serial_dev" value="$(arg serial_dev)" />
       <param name="baudrate" type="int" value="9600"/>
       <!-- INPUT TOPICS -->
-      <remap from="cmd_vel" to="cmd_vel" />
+      <remap from="cmd_vel" to="joy_teleop/cmd_vel" />
       <remap from="servo_pos" to="servo_pos" />
     </node>
 </launch>

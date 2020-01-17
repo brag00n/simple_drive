@@ -4,7 +4,7 @@
     <node pkg="simple_drive" type="cmd_vel_mux" name="cmd_vel_mux" clear_params="true" output="screen" respawn="true">
       <param name="block_duration" type="int" value="5"/>
       <!-- INPUT TOPICS -->
-      <remap from="teleop/cmd_vel" to="teleop/cmd_vel" />
+      <remap from="joy_teleop/cmd_vel" to="teleop/cmd_vel" />
       <remap from="move_base/cmd_vel" to="move_base/cmd_vel" />
       <!-- OUTPUT TOPICS -->
       <remap from="cmd_vel" to="cmd_vel" />
